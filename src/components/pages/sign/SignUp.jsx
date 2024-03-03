@@ -1,52 +1,47 @@
-// import { useContext, useState } from 'react';
+import { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import sign from "../../../assets/sign.png"
-// import { updateProfile } from 'firebase/auth';
-// import { AuthContext } from '../../../provider/AuthProvider';
+import { updateProfile } from 'firebase/auth';
 // import Swal from 'sweetalert2';
 import { FcGoogle } from 'react-icons/fc';
-// import useAxiosPublic from '../../../hooks/useAxiosPublic';
+import { AuthContext } from '../../provider/AuthProvider';
 
 const SignUp = () => {
-    // const axiosPublic = useAxiosPublic();
-    // const { createUser, googleSignUp } = useContext(AuthContext);
-    // const location = useLocation();
-    // const navigate = useNavigate();
-    // const [error, setError] = useState('');
-    // const [success, setSuccess] = useState('');
+    const { createUser, googleSignUp } = useContext(AuthContext);
+    const [error, setError] = useState('');
 
     const handleGoogle = () => {
-        // googleSignUp()
-        //     .then(res => {
-        //         console.log(res.user);
-        //         updateProfile(res.user, {
-        //             displayName: res.user.name,
-        //             email: res.user.email
-        //         })
+        googleSignUp()
+            .then(res => {
+                console.log(res.user);
+                updateProfile(res.user, {
+                    displayName: res.user.name,
+                    email: res.user.email
+                })
 
-        //         const userInfo = {
-        //             name: res.user.name,
-        //             email: res.user.email
-        //         }
+                // const userInfo = {
+                //     name: res.user.name,
+                //     email: res.user.email
+                // }
 
-        //         axiosPublic.post("/user", userInfo)
-        //             .then(res => {
+                // axiosPublic.post("/user", userInfo)
+                //     .then(res => {
 
-        //                 if (res.data.insertedId) {
-        //                     navigate(location?.state ? location.state : '/');
-        //                     Swal.fire({
-        //                         position: "top-end",
-        //                         icon: "success",
-        //                         title: "You signed up successfully!",
-        //                         showConfirmButton: false,
-        //                         timer: 1500
-        //                     });
-        //                 }
-        //             })
-        //     })
-        //     .catch(err => {
-        //         console.error(err.message);
-        //     })
+                //         if (res.data.insertedId) {
+                //             navigate(location?.state ? location.state : '/');
+                //             Swal.fire({
+                //                 position: "top-end",
+                //                 icon: "success",
+                //                 title: "You signed up successfully!",
+                //                 showConfirmButton: false,
+                //                 timer: 1500
+                //             });
+                //         }
+                //     })
+            })
+            .catch(err => {
+                console.error(err.message);
+            })
     }
 
     const handleSignUp = e => {
@@ -58,53 +53,52 @@ const SignUp = () => {
 
         console.log(name, email, password);
 
-        // const regex = /^(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
-        // if (password.length < 6) {
-        //     setError("Password should be at least 6 characters");
-        //     return;
-        // }
-        // else if (regex.test(password)) {
-        //     setError("You can not use any capital letter or any special character");
-        //     return;
-        // }
+        const regex = /^(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
+        if (password.length < 6) {
+            setError("Password should be at least 6 characters");
+            return;
+        }
+        else if (regex.test(password)) {
+            setError("You can not use any capital letter or any special character");
+            return;
+        }
 
-        // setError('');
-        // setSuccess('');
+        setError('');
 
-        // createUser(email, password)
-        //     .then(res => {
+        createUser(email, password)
+            .then(res => {
 
-        //         updateProfile(res.user, {
-        //             displayName: name,
-        //             email: email
-        //         })
+                updateProfile(res.user, {
+                    displayName: name,
+                    email: email
+                })
 
-        //         const userInfo = {
-        //             name: name,
-        //             email: email
-        //         }
+                // const userInfo = {
+                //     name: name,
+                //     email: email
+                // }
 
-        //         axiosPublic.post("/user", userInfo)
-        //             .then(res => {
+                // axiosPublic.post("/user", userInfo)
+                //     .then(res => {
 
-        //                 if (res.data.insertedId) {
-        //                     navigate(location?.state ? location.state : '/');
-        //                     Swal.fire({
-        //                         position: "top-end",
-        //                         icon: "success",
-        //                         title: "You signed up successfully!",
-        //                         showConfirmButton: false,
-        //                         timer: 1500
-        //                     });
-        //                 }
-        //             })
+                //         if (res.data.insertedId) {
+                //             navigate(location?.state ? location.state : '/');
+                //             Swal.fire({
+                //                 position: "top-end",
+                //                 icon: "success",
+                //                 title: "You signed up successfully!",
+                //                 showConfirmButton: false,
+                //                 timer: 1500
+                //             });
+                //         }
+                //     })
 
 
-        //     })
-        //     .catch(err => {
-        //         console.error(err);
-        //         setError(err.message);
-        //     })
+            })
+            .catch(err => {
+                console.error(err);
+                setError(err.message);
+            })
     }
 
 
@@ -142,9 +136,9 @@ const SignUp = () => {
                                 <div className="mt-6 form-control">
                                     <button className="btn btn-accent border-white text-white font-bold text-xl">Sign up</button>
                                 </div>
-                                {/* {
+                                {
                                     error && <p className="text-base text-red-800">{error}</p>
-                                } */}
+                                }
                                 <div className='flex justify-center'>
                                     <Link to={'/signIn'}><p>Already have account? <span className='text-accent font-semibold'>Sign in</span></p></Link>
                                 </div>
