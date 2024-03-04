@@ -28,8 +28,8 @@ const SignIn = () => {
     <div>
       <div className="w-5/6 mx-auto space-y-10">
         <div>
-          <div className="w-3/5 min-h-screen mx-auto mt-14">
-            <div className="text-center bg-accent w-full py-10">
+          <div className="w-2/5 min-h-screen mx-auto mt-14">
+            <div className="text-center bg-[#04734C] w-full py-10">
               <h1 className="text-5xl font-bold text-white">Sign in here!</h1>
             </div>
             <div>
@@ -62,14 +62,14 @@ const SignIn = () => {
                   />
                 </div>
                 <div className="mt-6 form-control">
-                  <button className="btn btn-accent border-white text-white font-bold text-xl">
+                  <button className="btn bg-[#04734C] hover:bg-[#04734C] border-white text-white font-bold text-xl">
                     Sign in
                   </button>
                 </div>
                 {error && <p className="text-base text-red-800">{error}</p>}
                 <Link to={"/signUp"}>
                   <p>
-                    Do not have an account? <span className="text-accent">Sign up</span> here
+                    Do not have an account? <span className="text-[#04734C]">Sign up</span> here
                   </p>
                 </Link>
               </form>

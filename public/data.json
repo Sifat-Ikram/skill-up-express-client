@@ -1,0 +1,167 @@
+[
+    {
+        "title": "Introduction to Python Programming",
+        "image": "https://i.ibb.co/ZmhTFrJ/python-applications.png",
+        "category": "Programming",
+        "rating": 5.5,
+        "author": "John Smith",
+        "booking_date": "03/04/2024",
+        "course_date": "03/15/2024",
+        "description": "Introduction to Python Programming is a comprehensive course designed for beginners who want to learn one of the most popular and versatile programming languages in the world. Python is known for its simplicity and readability, making it an excellent choice for those who are new to programming or transitioning from another language. In this course, you will learn the fundamentals of Python, including data types, control structures, functions, and object-oriented programming principles. You will also explore practical applications of Python, such as web development, data analysis, and automation. By the end of the course, you will have a solid understanding of Python programming concepts and be ready to tackle more advanced topics.",
+        "price": 99.99
+    },
+    {
+        "title": "Photography Fundamentals",
+        "image": "https://i.ibb.co/DbSsGFX/Photography-for-Beginners.jpg",
+        "category": "Photography",
+        "rating": 4.8,
+        "author": "Emily Johnson",
+        "booking_date": "03/05/2024",
+        "course_date": "03/20/2024",
+        "description": "Photography Fundamentals is a hands-on course designed to teach you the essential skills and techniques needed to take stunning photographs. Whether you're a beginner or have some experience with a camera, this course will help you improve your photography skills and take y images to the next level. You will learn about camera settings, composition, lighting, and editing techniques to create compelling photos. Through a series of practical exercises and assignments, you will gain confidence in your ability to capture beautiful moments and tell stories through y images. By the end of the course, you will have a portfolio of photos that showcase your newfound skills and creativity.",
+        "price": 129.99
+    },
+    {
+        "title": "Financial Literacy",
+        "image": "https://i.ibb.co/hKLqqRg/1695316800923-e-2147483647-v-beta-t-Lp17-Nwqw-Qxt0t9j-Vm5k-Zt-P8-Jsj4b-JF6t2ykjfa-NI1uk.png",
+        "category": "Finance",
+        "rating": 4,
+        "author": "Michael Brown",
+        "booking_date": "03/06/2024",
+        "course_date": "03/25/2024",
+        "description": "Financial Literacy 101 is a foundational course designed to empower you with the knowledge and skills needed to make informed financial decisions. Whether you're just starting your career, planning for retirement, or looking to improve your financial situation, this course will provide you with the tools and strategies to achieve your goals. You will learn about budgeting, saving, investing, managing debt, and protecting your assets. Through real-life examples and practical exercises, you will develop a personalized financial plan that aligns with your values and priorities. By the end of the course, you will feel more confident and empowered to take control of your financial future.",
+        "price": 79.99
+    },
+    {
+        "title": "Yoga for Beginners",
+        "image": "https://i.ibb.co/9rq20CL/Best-Poses-For-Yoga-Beginners-HERO.jpg",
+        "category": "Health & Wellness",
+        "rating": 4.6,
+        "author": "Sarah Lee",
+        "booking_date": "03/07/2024",
+        "course_date": "04/05/2024",
+        "description": "Yoga for Beginners is an introductory course designed to introduce you to the practice of yoga and its many benefits for physical and mental well-being. Whether you're new to yoga or looking to deepen your practice, this course will provide you with the foundation you need to develop a safe and effective yoga practice. You will learn basic yoga poses, breathing techniques, and relaxation exercises to improve flexibility, strength, and stress management. Through guided practice sessions and mindfulness exercises, you will cultivate a deeper connection to your body and mind. By the end of the course, you will feel more confident and comfortable practicing yoga on your own or in a group setting.",
+        "price": 89.99
+    },
+    {
+        "title": "Graphic Design Masterclass",
+        "image": "https://i.ibb.co/9qdSwfh/course-8-image.jpg",
+        "category": "Design",
+        "rating": 5.3,
+        "author": "Alex Turner",
+        "booking_date": "03/08/2024",
+        "course_date": "04/10/2024",
+        "description": "Graphic Design Masterclass is an intensive course designed to teach you the principles and techniques of graphic design. Whether you're a beginner or have some experience in design, this course will help you develop your skills and create visually compelling designs. You will learn about typography, color theory, layout, and composition to create effective designs for print and digital media. Through hands-on projects and critiques, you will refine your design skills and learn how to communicate ideas visually. By the end of the course, you will have a portfolio of professional-quality designs that showcase your creativity and talent.",
+        "price": 149.99
+    },
+    {
+        "title": "Digital Marketing Strategies",
+        "image": "https://i.ibb.co/GVmtNDJ/1633899610825-e-2147483647-v-beta-t-1b-Ch-Ahzi-R1d-HUJLQPl-RIFHlf-Uuc-HOwp-U0-N11t-U8-JXc-I.png",
+        "category": "Marketing",
+        "rating": 5,
+        "author": "Sophia Rodriguez",
+        "booking_date": "03/09/2024",
+        "course_date": "04/15/2024",
+        "description": "Digital Marketing Strategies is a comprehensive course designed to teach you the latest techniques and strategies for marketing your business online. Whether you're a small business owner, marketing professional, or aspiring entrepreneur, this course will provide you with the tools and knowledge you need to succeed in the digital marketplace. You will learn about search engine optimization (SEO), social media marketing, email marketing, content marketing, and more. Through case studies and real-world examples, you will learn how to develop and implement a digital marketing strategy that drives traffic, leads, and sales. By the end of the course, you will have the skills and confidence to take your digital marketing efforts to the next level.",
+        "price": 119.99
+    },
+    {
+        "title": "Cooking Basics",
+        "image": "https://i.ibb.co/3Wj7fbQ/instant-pot-beef-stew-5218740-step-01-b5c06001cf9a45dca56f87bb7e299b81.jpg",
+        "category": "Cooking",
+        "rating": 4.9,
+        "author": "David Nguyen",
+        "booking_date": "03/10/2024",
+        "course_date": "04/20/2024",
+        "description": "Cooking Basics: From Kitchen to Table is a beginner-friendly course designed to teach you the essential cooking skills and techniques you need to cook delicious meals at home. Whether you're a novice in the kitchen or looking to expand your culinary repertoire, this course will help you gain confidence and proficiency in the kitchen. You will learn basic cooking techniques, knife skills, and meal planning strategies to create a variety of dishes from scratch. Through step-by-step demonstrations and hands-on practice, you will learn how to prepare nutritious and flavorful meals that will impress your family and friends. By the end of the course, you will feel more comfortable and confident cooking in the kitchen.",
+        "price": 99.99
+    },
+    {
+        "title": "Introduction to Machine Learning",
+        "image": "https://i.ibb.co/RB32qJH/1-ik-EB53-J-p-PJCXy1-Ub1-XUs-Q.jpg",
+        "category": "Technology",
+        "rating": 5.7,
+        "author": "Oliver Anderson",
+        "booking_date": "03/21/2024",
+        "course_date": "06/15/2024",
+        "description": "Introduction to Machine Learning is a foundational course designed to provide you with a comprehensive introduction to the field of machine learning. Whether you're a beginner or have some experience in data analysis, this course will help you understand the fundamental concepts and techniques of machine learning. You will learn about supervised and unsupervised learning algorithms, model evaluation, and feature engineering. Through hands-on projects and exercises, you will gain practical experience building and evaluating machine learning models using real-world datasets. By the end of the course, you will have the knowledge and skills to apply machine learning techniques to solve a variety of data-driven problems.",
+        "price": 199.99
+    },
+    {
+        "title": "Artificial Intelligence Fundamentals",
+        "image": "https://i.ibb.co/9hf5XHL/017-02-20-scs-shortprograms-fundamentalsofartificial.jpg",
+        "category": "Technology",
+        "rating": 5.9,
+        "author": "Emma Wilson",
+        "booking_date": "03/11/2024",
+        "course_date": "04/25/2024",
+        "description": "Artificial Intelligence Fundamentals is an introductory course designed to provide you with a comprehensive understanding of the core concepts and applications of artificial intelligence (AI). Whether you're a beginner or have some experience in AI, this course will help you develop a solid foundation in this rapidly growing field. You will learn about machine learning, neural networks, natural language processing, and other AI techniques through a combination of lectures, readings, and hands-on projects. Through real-world examples and case studies, you will explore how AI is being used to solve complex problems in various industries, such as healthcare, finance, and transportation. By the end of the course, you will have the knowledge and skills to apply AI techniques to your own projects and contribute to the advancement of AI technology.",
+        "price": 179.99
+    },
+    {
+        "title": "Introduction to Web Development",
+        "image": "https://i.ibb.co/Q6Kf5y4/oen-YHim-Rv-OZh-Es-Ewn6-PQ.png",
+        "category": "Programming",
+        "rating": 5.4,
+        "author": "Jessica Brown",
+        "booking_date": "03/13/2024",
+        "course_date": "05/05/2024",
+        "description": "Introduction to Web Development is a beginner-friendly course designed to teach you the basics of building websites and web applications. Whether you're a complete novice or have some experience with HTML, CSS, and JavaScript, this course will help you develop the skills you need to create functional and attractive websites. You will learn about web design principles, front-end development techniques, and best practices for building responsive and accessible websites. Through hands-on projects and exercises, you will build your own portfolio of web projects that demonstrate your skills and creativity. By the end of the course, you will have the confidence to pursue further studies in web development or start building your own websites.",
+        "price": 129.99
+    },
+    {
+        "title": "Business Management Essentials",
+        "image": "https://i.ibb.co/WsXgJS1/banner.png",
+        "category": "Business",
+        "rating": 5.5,
+        "author": "Ryan Johnson",
+        "booking_date": "03/14/2024",
+        "course_date": "05/10/2024",
+        "description": "Business Management Essentials is a comprehensive course designed to equip you with the knowledge and skills needed to succeed in today's dynamic business environment. Whether you're an aspiring entrepreneur, mid-level manager, or seasoned executive, this course will provide you with the tools and frameworks you need to lead effectively and drive results. You will learn about key concepts in management, including strategic planning, organizational behavior, leadership, and decision-making. Through case studies and real-world examples, you will explore best practices and innovative strategies for managing teams, projects, and organizations. By the end of the course, you will have the confidence and expertise to tackle the challenges of modern business and achieve your professional goals.",
+        "price": 149.99
+    },
+    {
+        "title": "Mindfulness Meditation",
+        "image": "https://i.ibb.co/9b9css5/flat-mindfulness-meditation-infographic-vector.jpg",
+        "category": "Health & Wellness",
+        "rating": 4.1,
+        "author": "Sophie Carter",
+        "booking_date": "03/15/2024",
+        "course_date": "05/15/2024",
+        "description": "Mindfulness Meditation is a transformative course designed to help you cultivate mindfulness and compassion in your daily life. Whether you're new to meditation or have been practicing for years, this course will provide you with the tools and techniques you need to develop a consistent meditation practice and experience greater peace and well-being. You will learn about the science of mindfulness and its benefits for mental and physical health. Through guided meditation practices and mindfulness exercises, you will learn how to cultivate present moment awareness, manage stress, and cultivate a greater sense of connection and compassion towards yourself and others. By the end of the course, you will have the skills and confidence to integrate mindfulness into your daily life and experience profound transformation.",
+        "price": 79.99
+    },
+    {
+        "title": "Mobile App Development",
+        "image": "https://i.ibb.co/Fb0QmnG/App-development-process-Feat-image.jpg",
+        "category": "Technology",
+        "rating": 5.2,
+        "author": "Kevin Johnson",
+        "booking_date": "03/16/2024",
+        "course_date": "05/20/2024",
+        "description": "Mobile App Development is a comprehensive course designed to teach you how to build native mobile applications for iOS and Android devices. Whether you're a beginner or have some experience in app development, this course will provide you with the knowledge and skills you need to create high-quality mobile apps. You will learn about app design, user interface development, data storage, and deployment to app stores. Through hands-on projects and exercises, you will gain practical experience building real-world mobile apps. By the end of the course, you will have the skills and confidence to develop your own mobile apps and bring your ideas to life.",
+        "price": 179.99
+    },
+    {
+        "title": "Data Science Fundamentals",
+        "image": "https://i.ibb.co/2FFtFYd/data-science.png",
+        "category": "Data Science",
+        "rating": 4.5,
+        "author": "Alice Smith",
+        "booking_date": "03/17/2024",
+        "course_date": "05/25/2024",
+        "description": "Data Science Fundamentals is an introductory course designed to provide you with a solid foundation in data science concepts and techniques. Whether you're new to data science or looking to expand your skills, this course will help you develop the knowledge and skills you need to analyze and interpret data effectively. You will learn about data collection, cleaning, and preprocessing, as well as statistical analysis and machine learning techniques. Through hands-on projects and exercises, you will gain practical experience working with real-world datasets and building predictive models. By the end of the course, you will have the skills and confidence to tackle complex data science problems and make data-driven decisions.",
+        "price": 159.99
+    },
+    {
+        "title": "Financial Modeling and Valuation",
+        "image": "https://i.ibb.co/47KqNZY/0-Vp-XQYUs-Vgctltgf0.png",
+        "category": "Finance",
+        "rating": 5.7,
+        "author": "Mark Thompson",
+        "booking_date": "03/18/2024",
+        "course_date": "06/01/2024",
+        "description": "Financial Modeling and Valuation is an advanced course designed for finance professionals and aspiring analysts who want to develop expertise in financial modeling and valuation techniques. Whether you're working in investment banking, corporate finance, or consulting, this course will provide you with the tools and skills you need to excel in your career. You will learn how to build financial models from scratch, analyze financial statements, and perform company valuations using discounted cash flow (DCF) and comparable company analysis (CCA) methods. Through case studies and real-world examples, you will gain practical experience applying these techniques to real-world business situations. By the end of the course, you will have the skills and confidence to build complex financial models and make informed investment decisions.",
+        "price": 249.99
+    }
+]

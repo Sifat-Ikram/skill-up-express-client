@@ -12,29 +12,29 @@ const Navbar = () => {
 
   const navLinks = (
     <>
-      <li className="text-xl font-normal">
+      <li className="text-xl font-semibold hover:bg-[#04734C] hover:text-white rounded-md">
         <Link to={"/"}>Home</Link>
       </li>
-      <li className="text-xl font-normal">
-        <Link to={"/allTour"}>All Courses</Link>
+      <li className="text-xl font-semibold hover:bg-[#04734C] hover:text-white rounded-md">
+        <Link to={"/allCourse"}>All Courses</Link>
       </li>
       {user && (
         <>
-          <li className="text-xl font-normal">
+          <li className="text-xl font-semibold hover:bg-[#04734C] hover:text-white rounded-md">
             <Link to={"/dashboard"}>Dashboard</Link>
           </li>
-          <li className="text-xl font-normal">
+          <li className="text-xl font-semibold hover:bg-[#04734C] hover:text-white rounded-md">
             <Link to={"/about"}>Add Course</Link>
           </li>
         </>
       )}
       {!user &&
         <>
-          <li className="text-xl font-normal">
+          <li className="text-xl font-semibold  hover:bg-[#04734C] hover:text-white rounded-md">
             <Link to={"/signUp"}>Sign up</Link>
           </li>
         </>}
-      <li className="text-xl font-normal">
+      <li className="text-xl font-semibold hover:bg-[#04734C] hover:text-white rounded-md">
         <Link to={"/about"}>About Us</Link>
       </li>
     </>
@@ -42,7 +42,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-accent w-full lg:px-10 md:px-8 px-5">
+      <div className="navbar w-full lg:px-10 md:px-8 px-5">
         <div className="text-white navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -63,29 +63,29 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu text-accent font-bold rounded-xs menu-md dropdown-content bg-white mt-3 z-[1] p-2 shadow-xl w-52"
+              className="menu text-[#04734C] font-bold rounded-xs menu-md dropdown-content bg-white mt-3 z-[1] p-2 shadow-xl w-52"
             >
               {navLinks}
             </ul>
           </div>
           <a className="block text-left cursor-pointer font-lato" href="/">
-            <h1 className="lg:text-4xl md:text-2xl text-lg italic font-extrabold uppercase">
+            <h1 className="lg:text-4xl md:text-2xl text-lg italic text-[#04734C] font-extrabold uppercase">
               skillup express
             </h1>
           </a>
         </div>
         <div className="hidden navbar-center lg:flex">
-          <ul className="px-1 space-x-3 font-bold text-white menu menu-horizontal">
+          <ul className="px-1 space-x-3 font-bold text-[#04734C] menu menu-horizontal">
             {navLinks}
           </ul>
         </div>
         <div className="navbar-end">
           {user ? (
-            <a onClick={handleSignOut} className="btn btn-accent text-white font-semibold">
+            <a onClick={handleSignOut} className="btn bg-[#04734C] hover:bg-[#04734C] text-white font-semibold">
               Sign out
             </a>
           ) : (
-            <a href="/SignIn" className="btn btn-accent text-white font-semibold">
+            <a href="/SignIn" className="btn bg-[#04734C] hover:bg-[#04734C] text-white font-semibold">
               Sign in
             </a>
           )}
