@@ -24,7 +24,7 @@ const Navbar = () => {
             <Link to={"/dashboard"}>Dashboard</Link>
           </li>
           <li className="text-xl font-semibold hover:bg-[#04734C] hover:text-white rounded-md">
-            <Link to={"/about"}>Add Course</Link>
+            <Link to={"/addCourse"}>Add Course</Link>
           </li>
         </>
       )}
@@ -45,7 +45,7 @@ const Navbar = () => {
       <div className="navbar w-full lg:px-10 md:px-8 px-5">
         <div className="text-white navbar-start">
           <div className="dropdown">
-            <label tabIndex={0} className="btn btn-ghost lg:hidden">
+            <label tabIndex={0} className="btn border-2 border-solid border-[#04734C] mr-2 hover:border-[#04734C] bg-base-300 lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-10 h-10"
@@ -69,7 +69,7 @@ const Navbar = () => {
             </ul>
           </div>
           <a className="block text-left cursor-pointer font-lato" href="/">
-            <h1 className="lg:text-4xl md:text-2xl text-lg italic text-[#04734C] font-extrabold uppercase">
+            <h1 className="lg:text-3xl md:text-2xl text-lg italic text-[#04734C] font-extrabold uppercase">
               skillup express
             </h1>
           </a>

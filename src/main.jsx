@@ -10,6 +10,10 @@ import SignUp from "./components/pages/sign/SignUp.jsx";
 import AuthProvider from "./components/provider/AuthProvider.jsx";
 import SignIn from "./components/pages/sign/SignIn.jsx";
 import AllCourses from "./components/pages/courses/AllCourses.jsx";
+import Courses from "./components/pages/courses/Courses.jsx";
+import DetailsPage from "./components/pages/details/DetailsPage.jsx";
+import Dashboard from "./components/pages/dashboard/Dashboard.jsx";
+import AddCourse from "./components/pages/addCourse/AddCourse.jsx";
 const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
@@ -32,7 +36,25 @@ const router = createBrowserRouter([
       },
       {
         path: "/allCourse",
-        element: <AllCourses />
+        element: <AllCourses />,
+        children: [
+          {
+            path: "/allCourse/:id",
+            element: <Courses />
+          }
+        ]
+      },
+      {
+        path: "/courseDetails/:id",
+        element: <DetailsPage />
+      },
+      {
+        path: "/dashboard",
+        element: <Dashboard />
+      },
+      {
+        path: "/addCourse",
+        element: <AddCourse />
       }
     ],
   },
