@@ -20,6 +20,7 @@ const Dashboard = () => {
   if (!courses) {
     return <span className="loading loading-dots loading-lg"></span>;
   }
+
   const handleDelete = (item) => {
     Swal.fire({
       title: "Are you sure?",
@@ -31,12 +32,10 @@ const Dashboard = () => {
       confirmButtonText: "Yes",
     }).then((result) => {
       if (result.isConfirmed) {
-        console.log("nothing");
         axiosPublic
           .delete(`/cart/${item._id}`)
           .then((res) => {
             if (res.data.deletedCount > 0) {
-              console.log(res.data);
               refetch();
               Swal.fire({
                 title: "Deleted!",
@@ -54,40 +53,24 @@ const Dashboard = () => {
   };
 
   return (
-    <div className="w-11/12 mx-auto space-y-10">
-      <h1 className="text-2xl font-bold">Your enrolled courses</h1>
-      <div className="grid grid-cols-1 gap-3 lg:grid-cols-2 h-52">
+    <div className="container w-4/5 mx-auto py-10">
+      <h1 className="text-5xl font-bold mb-8 text-[#04734C]">Your enrolled courses</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         {courses.map((course) => (
-          <div
-            key={course._id}
-            className="flex gap-7 border-2 border-solid rounded-lg"
-          >
-            <img src={course.image} alt={course.title} className="w-52 h-full" />
-            <div className="flex justify-center items-center gap-10 py-2 pr-4">
-              <div className="pt-3 space-y-2">
-                <h1 className="text-xl font-semibold">{course.title}</h1>
-                <h1 className="text-xl">
-                  <span className="font-semibold">Category :</span>{" "}
-                  {course.category}
-                </h1>
-                <h1 className="text-xl">
-                  <span className="font-semibold">Course Author :</span>{" "}
-                  {course.author}
-                </h1>
-                <h1 className="text-xl">
-                  <span className="font-semibold">start date:</span>{" "}
-                  {course.course_date}
-                </h1>
-              </div>
-              <div className="flex flex-col justify-center gap-4 items-center">
-                <button onClick={() => handleDelete(course)} className="btn-outline rounded-lg border-2 border-solid hover:border-red-500 border-red-500 text-red-500 hover:bg-red-500 hover:text-white p-2">
-                  <MdDelete className="text-2xl font-extrabold" />
+          <div key={course._id} className="bg-white w-96 rounded-lg shadow-md overflow-hidden">
+            <img src={course.image} alt={course.title} className="w-full h-40 object-cover" />
+            <div className="p-4">
+              <h2 className="text-lg font-semibold mb-2 text-[#04734C]">{course.title}</h2>
+              <p className="text-gray-600 mb-2">Category: {course.category}</p>
+              <p className="text-gray-600 mb-2">Course Author: {course.author}</p>
+              <p className="text-gray-600 mb-4">Start Date: {course.course_date}</p>
+              <div className="flex justify-between items-center">
+                <button onClick={() => handleDelete(course)} className="bg-red-500 flex items-center text-white px-5 py-3 rounded-md hover:bg-red-600 transition-colors duration-300">
+                  <MdDelete className="text-2xl font-bold mr-1" /> Delete
                 </button>
-                <button className="btn-outline rounded-lg border-2 border-solid border-yellow-500 hover:border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-white p-2">
-                  <Link to={`/update/${course._id}`}>
-                  <MdNoteAlt className="text-2xl font-extrabold" />
-                  </Link>
-                </button>
+                <Link to={`/update/${course._id}`} className="bg-yellow-500 flex items-center text-white px-5 py-3 rounded-md hover:bg-yellow-600 transition-colors duration-300">
+                  <MdNoteAlt className="text-2xl font-bold mr-1" /> Update
+                </Link>
               </div>
             </div>
           </div>

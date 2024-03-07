@@ -14,7 +14,7 @@ const UpdatePage = () => {
     const { id } = useParams();
   const axiosPublic = useAxiosPublic();
   const { register, handleSubmit, reset } = useForm();
-console.log(id);
+
   const { data: courses = [] } = useQuery({
     queryKey: ["course"],
     queryFn: async () => {
@@ -29,12 +29,14 @@ console.log(id);
   }
 
   const filteredCourse = courses.find((course) => course._id === id);
-  console.log(filteredCourse);
+  
   if (!filteredCourse) {
     return <span className="loading loading-dots loading-lg"></span>;
   }
 
   const {
+    _id,
+    image,
     title,
     author,
     category,
@@ -49,15 +51,21 @@ console.log(id);
 
   const onSubmit = async (data) => {
     console.log(data);
-    const imageFile = { image: data.image[0] };
-    const res = await axios.post(image_hosting_api, imageFile, {
-      headers: {
-        "content-type": "multipart/form-data",
-      },
-    });
-
-    if (res.data.data.display_url) {
-      const courseInfo = {
+    
+    let imageUrl = image; // Keep the original image by default
+    
+    // Check if the user has uploaded a new image
+    if (data.image && data.image.length > 0) {
+        const imageFile = { image: data.image[0] };
+        const res = await axios.post(image_hosting_api, imageFile, {
+            headers: {
+                "content-type": "multipart/form-data",
+            },
+        });
+        imageUrl = res.data.data.display_url;
+    }
+    
+    const courseInfo = {
         title: data.title,
         author: data.author,
         category: data.category,
@@ -68,17 +76,19 @@ console.log(id);
         booking_date: data.booking_date,
         time_period: data.time_period,
         details: data.details,
-        image: res.data.data.display_url,
-      };
+        image: imageUrl,
+    };
 
-      const courseRes = await axiosPublic.post("/course", courseInfo);
+    const courseRes = await axiosPublic.patch(`/course/${_id}`, courseInfo);
 
-      if (courseRes.data.insertedId) {
-        Swal.fire("Course added successfully");
+    console.log(courseRes);
+
+    if (courseRes.data.insertedId) {
+        Swal.fire("Course updated successfully");
         reset();
-      }
     }
-  };
+};
+
 
   return (
     <div className="my-10">

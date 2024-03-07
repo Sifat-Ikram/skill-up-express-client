@@ -14,6 +14,8 @@ import Courses from "./components/pages/courses/Courses.jsx";
 import DetailsPage from "./components/pages/details/DetailsPage.jsx";
 import Dashboard from "./components/pages/dashboard/Dashboard.jsx";
 import AddCourse from "./components/pages/addCourse/AddCourse.jsx";
+import Reviewer from "./components/pages/review/Reviewer.jsx";
+import UpdatePage from "./components/pages/updatePage/UpdatePage.jsx";
 const queryClient = new QueryClient();
 
 const router = createBrowserRouter([
@@ -55,6 +57,14 @@ const router = createBrowserRouter([
       {
         path: "/addCourse",
         element: <AddCourse />
+      },
+      {
+        path: "/reviewerPage/:id",
+        element: <Reviewer />
+      },
+      {
+        path: "/update/:id",
+        element: <UpdatePage />
       }
     ],
   },

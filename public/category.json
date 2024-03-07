@@ -1,23 +1,30 @@
 [
     {
-        "name" : "Programming"
+        "name" : "Programming",
+        "image": "https://i.ibb.co/RCppnc5/9f15109746df254c5a030a7ba9239f8a4bb5dadb-1456x816.png"
     },
     {
-        "name" : "Health"
+        "name" : "Health",
+        "image": "https://i.ibb.co/Y2jqX1c/Adobe-Stock-163967512-1030x687.jpg"
     },
     {
-        "name" : "Photography"
+        "name" : "Photography",
+        "image": "https://i.ibb.co/K5MtLC9/Guest-with-camera-gear-on-safari-in-Botswana-Pangolin-Photo-Safaris-scaled.webp"
     },
     {
-        "name" : "Design"
+        "name" : "Design",
+        "image": "https://i.ibb.co/2Zzc61V/graphic-design-studio.jpg"
     },
     {
-        "name" : "Finance"
+        "name" : "Finance",
+        "image": "https://i.ibb.co/Xy4wcbr/finance-accounting.webp"
     },
     {
-        "name" : "Marketing"
+        "name" : "Marketing",
+        "image": "https://i.ibb.co/P1S2jQj/digital-marketing-ts-100598676-orig-4.jpg"
     },
     {
-        "name" : "Business"
+        "name" : "Business",
+        "image": "https://i.ibb.co/K01dV9p/business-meeting-1-1024x683.jpg"
     }
 ]
